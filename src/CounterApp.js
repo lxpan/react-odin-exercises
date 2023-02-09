@@ -18,10 +18,12 @@ class CounterApp extends Component {
   }
 
   render() {
+    const { count } = this.state;
+
     return (
       <div>
         <button onClick={this.countUp}>Click Me!</button>
-        <p>{this.state.count}</p>
+        <p>{count}</p>
       </div>
     );
   }
