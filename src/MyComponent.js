@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class MyComponent extends Component {
+class MyComponentClass extends Component {
   constructor(props) {
     super(props);
   }
@@ -15,6 +15,11 @@ class MyComponent extends Component {
       </div>
     );
   }
+}
+
+// MyComponent.js
+function MyComponent({ title }) {
+  return <div>{title}</div>;
 }
 
 export default MyComponent;

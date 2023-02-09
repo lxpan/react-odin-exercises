@@ -3,7 +3,7 @@
 import React, { Component } from 'react';
 import MyComponent from './MyComponent';
 
-class App extends Component {
+class AppClass extends Component {
   constructor(props) {
     super(props);
 
@@ -21,6 +21,14 @@ class App extends Component {
       </div>
     );
   }
+}
+
+function App() {
+  return (
+    <div>
+      <MyComponent title="foobar"/>
+    </div>
+  )
 }
 
 export default App;
